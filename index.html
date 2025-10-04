@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà Thông Minh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏠 Nhà Thông Minh</h1>
+
+        <div class="data-display">
+            <p>🌡️ Nhiệt độ: <span id="nhiet-do">---</span> °C</p>
+            <p>💧 Độ ẩm: <span id="do-am">---</span> %</p>
+        </div>
+
+        <button id="connect-arduino">Kết nối Arduino</button>
+        <p id="status-message">Trạng thái: Chưa kết nối</p>
+
+        <h2>Điều khiển thiết bị</h2>
+        <div class="control-panel">
+            <button id="den-on" data-command="LED_ON">💡 Bật Đèn</button>
+            <button id="den-off" data-command="LED_OFF">💡 Tắt Đèn</button>
+            <button id="quat-on" data-command="FAN_ON">🌀 Bật Quạt</button>
+            <button id="quat-off" data-command="FAN_OFF">🌀 Tắt Quạt</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
